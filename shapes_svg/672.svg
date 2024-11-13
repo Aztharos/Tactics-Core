@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:ffdec="https://www.free-decompiler.com/flash" xmlns:xlink="http://www.w3.org/1999/xlink" ffdec:objectType="shape" height="100.0px" width="50.0px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, 25.0, 100.0)">
+    <path d="M17.65 -70.6 Q25.0 -41.25 25.0 0.0 L-25.0 0.0 Q-25.0 -41.25 -17.7 -70.6 -10.35 -100.0 0.0 -100.0 10.3 -100.0 17.65 -70.6" fill="url(#gradient0)" fill-rule="evenodd" stroke="none"/>
+  </g>
+  <defs>
+    <radialGradient cx="0" cy="0" gradientTransform="matrix(0.0305, 0.0, 0.0, 0.122, -0.05, 0.0)" gradientUnits="userSpaceOnUse" id="gradient0" r="819.2" spreadMethod="pad">
+      <stop offset="0.4392156862745098" stop-color="#ffffff"/>
+      <stop offset="0.6" stop-color="#66ffff"/>
+      <stop offset="1.0" stop-color="#0033ff" stop-opacity="0.0"/>
+    </radialGradient>
+  </defs>
+</svg>
