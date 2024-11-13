@@ -1,0 +1,2 @@
+stop();
+PlayAgainBtn.enabled = true;

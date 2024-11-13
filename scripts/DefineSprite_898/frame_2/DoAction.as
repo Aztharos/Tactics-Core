@@ -1,0 +1,1 @@
+bgm.setVolume(100);
