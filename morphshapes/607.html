@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="4" height="8" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+function morphshape607(ctx,ctrans,frame,ratio,time){
+	var pathData="M 565 565 -1048 -1048 L 591 591 -1036 -1036 620 620 -1010 -1010 Q 632 632 -993 -993 630 630 -976 -976 L 629 629 -972 -972 634 634 -965 -965 635 635 -948 -948 656 656 -981 -981 655 655 -994 -994 Q 666 666 -1091 -1091 632 632 -1105 -1105 584 584 -1128 -1128 565 565 -1048 -1048";
+	drawMorphPath(ctx,pathData,ratio,false);
+	ctx.fillStyle=tocolor(ctrans.apply([Math.round(215+ratio*(40)/65535),Math.round(185+ratio*(70)/65535),Math.round(255+ratio*(0)/65535),((Math.round(0+ratio*(0)/65535))/255)]));
+	ctx.fill("evenodd");
+	ctx.save();
+	ctx.clip();
+	ctx.transform(0.0073394775390625+ratio*(0)/65535,0.0020294189453125+ratio*(0)/65535,-0.0034332275390625+ratio*(0)/65535,0.012420654296875+ratio*(0)/65535,598.0+ratio*(0)/65535,-1009.0+ratio*(0)/65535);
+	var grd=ctx.createRadialGradient(0.0+ratio*(0)/65535,0,0,0,0,16384);
+	var s = 0.43529411764705883+ratio*(0)/65535;
+	if(s<0) s = 0;
+	if(s>1) s = 1;
+	grd.addColorStop(s,tocolor(ctrans.apply([Math.round(255+ratio*(0)/65535),Math.round(255+ratio*(0)/65535),Math.round(255+ratio*(0)/65535),((Math.round(128+ratio*(-128)/65535))/255)])));
+	var s = 0.45098039215686275+ratio*(0)/65535;
+	if(s<0) s = 0;
+	if(s>1) s = 1;
+	grd.addColorStop(s,tocolor(ctrans.apply([Math.round(0+ratio*(255)/65535),Math.round(255+ratio*(0)/65535),Math.round(255+ratio*(0)/65535),((Math.round(128+ratio*(-128)/65535))/255)])));
+	var s = 1.0+ratio*(0)/65535;
+	if(s<0) s = 0;
+	if(s>1) s = 1;
+	grd.addColorStop(s,tocolor(ctrans.apply([Math.round(215+ratio*(40)/65535),Math.round(185+ratio*(70)/65535),Math.round(255+ratio*(0)/65535),((Math.round(0+ratio*(0)/65535))/255)])));
+	ctx.fillStyle = grd;
+	ctx.fillRect(-16384,-16384,32768,32768);
+	ctx.restore();
+	var pathData="M 565 565 -1048 -1048 Q 584 584 -1128 -1128 632 632 -1105 -1105 666 666 -1091 -1091 655 655 -994 -994 L 656 656 -981 -981 635 635 -948 -948 634 634 -965 -965 629 629 -972 -972 630 630 -976 -976 Q 632 632 -993 -993 620 620 -1010 -1010 L 591 591 -1036 -1036 565 565 -1048 -1048 Z";
+	var scaleMode = "NORMAL";
+	ctx.strokeStyle=tocolor(ctrans.apply([Math.round(0+ratio*(0)/65535),Math.round(0+ratio*(0)/65535),Math.round(0+ratio*(1)/65535),((Math.round(0+ratio*(0)/65535))/255)]));
+	ctx.lineWidth=0.0+ratio*(0)/65535;
+	ctx.lineCap="round";
+	ctx.lineJoin="round";
+	drawMorphPath(ctx,pathData,ratio,true,scaleMode);
+
+}
+
+var originalWidth=4;
+var originalHeight=8;
+ function drawFrame(ctx,ratio){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("morphshape607",canvas,ctx,[0.05,0.0,0.0,0.05,-28.25,55.5],ctrans,1,0,ratio,0);
+	ctx.restore();
+}
+var step = 655;
+var ratio = -1;
+function nextFrame(ctx){
+	ctx.clearRect(0,0,4,8);
+	ratio = (ratio+step)%65535;
+	drawFrame(ctx,ratio);
+}
+window.setInterval(function(){nextFrame(ctx)},10);
+</script>
+</body>
+</html>
