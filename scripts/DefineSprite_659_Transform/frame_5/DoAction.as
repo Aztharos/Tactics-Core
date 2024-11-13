@@ -1,0 +1,12 @@
+_parent._x -= DX;
+_parent._y -= DY;
+_X = _X + DX;
+_Y = _Y + DY;
+_parent.attachMovie(_parent._parent._parent.unittype[10].unit,"sprite",0);
+_parent.sprite._x = 0;
+_parent.sprite._y = 22;
+_parent.stand();
+glow.rb = glowr;
+glow.gb = glowg;
+glow.bb = glowb;
+spritecolor.setTransform(glow);
