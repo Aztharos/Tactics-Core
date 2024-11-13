@@ -1,0 +1,13 @@
+[
+xmin 2147
+ymin 52
+xmax 2910
+ymax 261
+translatex 2146
+][
+font 709
+height 220
+color #ffffff
+y 216
+spacingpair "y" "" -1
+]Ability

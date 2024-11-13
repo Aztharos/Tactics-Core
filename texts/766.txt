@@ -1,0 +1,26 @@
+[
+xmin 4424
+ymin 52
+xmax 9614
+ymax 261
+translatex 4406
+][
+font 709
+height 220
+letterspacing 89
+color #ffffff
+x 2
+y 216
+spacing "i" 1
+spacing "t" 1
+spacing "a" 1
+spacing " " 1
+spacing "n" 1
+spacingpair "D" "i" 1
+spacingpair "g" "i" 1
+spacingpair "l" " " 1
+spacingpair "d" " " 1
+spacingpair "E" "n" 1
+spacingpair "r" "t" 1
+spacingpair "m" "e" 1
+]Digital Seed Entertainment

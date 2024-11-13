@@ -1,0 +1,18 @@
+[
+xmin -40
+ymin -40
+xmax 800
+ymax 365
+readonly 1
+noselect 1
+useoutlines 1
+font 709
+height 280
+color #ff33ff66
+align right
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+variablename posdmg
+]

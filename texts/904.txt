@@ -1,0 +1,13 @@
+[
+xmin 414
+ymin 85
+xmax 2657
+ymax 381
+translatex 396
+][
+font 749
+height 400
+color #ffffff
+x 2
+y 376
+]Game Over

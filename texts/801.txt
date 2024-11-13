@@ -1,0 +1,71 @@
+[
+xmin 5
+ymin 52
+xmax 5171
+ymax 1665
+][
+font 749
+height 260
+color #ffffff
+y 244
+]Gameplay [
+color #999999
+]and[
+color #ffffff
+] Concept [
+color #999999
+]by[
+color #ffffff
+spacingpair "S" "e" -1
+] Seed [
+color #999999
+]and[
+color #ffffff
+] Jwcc[
+x 0
+y 586
+spacingpair "D" "e" -1
+]Character Design [
+color #999999
+]and[
+color #ffffff
+] Graphics [
+color #999999
+]by[
+color #ffffff
+spacingpair "S" "e" -1
+] Seed[
+x 0
+y 928
+spacingpair "S" "o" -1
+]Sound [
+color #999999
+]by[
+color #ffffff
+spacingpair "S" "e" -1
+] Seed [
+color #999999
+]and[
+color #ffffff
+spacingpair "S" "E" -1
+] BOku::SE[
+x 0
+y 1270
+]Programmed [
+color #999999
+]and[
+color #ffffff
+] Produced [
+color #999999
+]by[
+color #ffffff
+spacingpair "S" "e" -1
+] Seed[
+x 0
+y 1612
+spacingpair "S" "p" -1
+]With Special Thanks [
+color #999999
+]to[
+color #ffffff
+] Mango boy

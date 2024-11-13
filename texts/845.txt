@@ -1,0 +1,14 @@
+[
+xmin -10
+ymin 47
+xmax 896
+ymax 218
+][
+font 749
+height 220
+color #ffcc00
+y 216
+spacingpair "v" "e" -1
+]Active [
+color #999999
+]:

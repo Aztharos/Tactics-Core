@@ -1,0 +1,13 @@
+[
+xmin 1079
+ymin 57
+xmax 1907
+ymax 238
+translatex 1076
+][
+font 709
+height 240
+color #ffcc00
+x 2
+y 236
+]Attack

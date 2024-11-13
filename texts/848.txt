@@ -1,0 +1,12 @@
+[
+xmin 2
+ymin 59
+xmax 603
+ymax 218
+][
+font 709
+height 220
+color #ffffff
+y 216
+spacingpair "e" "" -1
+]Mute

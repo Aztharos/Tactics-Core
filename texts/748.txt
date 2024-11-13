@@ -1,0 +1,45 @@
+[
+xmin 119
+ymin 58
+xmax 1452
+ymax 2354
+translatex 113
+][
+font 709
+height 220
+letterspacing -1
+color #ffffff
+x 597
+y 216
+spacingpair "P" "o" 1
+spacingpair "o" "w" 1
+spacingpair "r" "" 1
+]Power[
+letterspacing 0
+x 501
+y 572
+spacingpair "y" "" -1
+]Vitality[
+x 593
+y 928
+spacingpair "y" "" -1
+]Agility[
+x 418
+y 1284
+spacing "e" -1
+]Defense[
+x 4
+y 1640
+spacingpair "e" "s" -1
+]Magic Resist[
+letterspacing -1
+x 623
+y 1996
+spacingpair "p" "e" 1
+spacingpair "d" "" 1
+]Speed[
+letterspacing 0
+x 180
+y 2352
+spacing "e" -1
+]Movement

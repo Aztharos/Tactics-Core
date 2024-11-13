@@ -1,0 +1,13 @@
+[
+xmin 21
+ymin 59
+xmax 957
+ymax 261
+][
+font 749
+height 220
+color #7878bc
+y 216
+]Target [
+color #999999
+]:

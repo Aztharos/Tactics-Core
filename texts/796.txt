@@ -1,0 +1,13 @@
+[
+xmin 1106
+ymin 61
+xmax 1888
+ymax 239
+translatex 1095
+][
+font 709
+height 240
+color #ffcc00
+x 2
+y 236
+]Status

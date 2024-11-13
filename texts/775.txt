@@ -1,0 +1,21 @@
+[
+xmin -95
+ymin 55
+xmax 3129
+ymax 304
+translatex -128
+][
+font 749
+height 320
+color #ffcc00
+x 2
+y 300
+spacingpair " " "C" -1
+spacingpair "o" "r" -1
+]Tactics Core[
+color #ffffff
+spacing " " -1
+]  [
+font 749
+height 280
+]ver1.01

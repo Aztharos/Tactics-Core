@@ -1,0 +1,13 @@
+[
+xmin 1152
+ymin 64
+xmax 1835
+ymax 238
+translatex 1148
+][
+font 709
+height 240
+color #ffcc00
+x 2
+y 236
+]Move

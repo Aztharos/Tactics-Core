@@ -1,0 +1,26 @@
+[
+xmin -393
+ymin 50
+xmax 12866
+ymax 981
+translatex -396
+][
+font 709
+height 260
+color #ffffff
+y 244
+spacing "e" -1
+spacing "n" -1
+spacing "p" -1
+]The Tactics Core engine is a powerful Strategy RPG development module, developed by DigiS using Flash MX.  [
+x 0
+y 586
+spacing "e" -1
+spacing "n" -1
+spacing "p" -1
+]The code was written entirely in Flash 6 Actionscript, and it includes features such as dynamic 3D depth [
+x 0
+y 928
+spacing "e" -1
+spacing "n" -1
+]layering, and AI logic for enemy or guest units.

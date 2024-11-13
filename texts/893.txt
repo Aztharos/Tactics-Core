@@ -1,0 +1,13 @@
+[
+xmin 1074
+ymin 57
+xmax 1919
+ymax 239
+translatex 1064
+][
+font 709
+height 240
+color #ffcc00
+x 1
+y 236
+]Cancel

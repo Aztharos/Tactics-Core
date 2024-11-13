@@ -1,0 +1,85 @@
+[
+xmin 1
+ymin 50
+xmax 8497
+ymax 4354
+][
+font 709
+height 260
+color #ffffff
+y 244
+spacing "p" -1
+spacingpair "e" " " -1
+spacingpair "n" "d" -1
+]Tactics Core supports four basic commands:[
+color #ffcc00
+x 0
+y 928
+]Attack[
+color #ffffff
+] [
+color #999999
+]-[
+color #ffffff
+spacing "e" -1
+spacingpair "p" "h" -1
+] Deal physical or magical damage to a target or target area.  [
+x 0
+y 1270
+spacing "e" -1
+spacing "n" -1
+]Healer units use Heal to restore HP instead.[
+color #ffcc00
+x 0
+y 1954
+spacingpair "e" "" -1
+]Move[
+color #ffffff
+] [
+color #999999
+]-[
+color #ffffff
+spacing "n" -1
+spacing "e" -1
+spacing "p" -1
+] Walk to an empty space.  Friendly units on the path will move [
+x 0
+y 2296
+spacing "e" -1
+spacing "n" -1
+]aside.  Move can be undone as long as Attack is not used after it.[
+color #ffcc00
+x 0
+y 2980
+]Wait[
+color #ffffff
+] [
+color #999999
+]-[
+color #ffffff
+spacing "n" -1
+spacing "e" -1
+] End the current unit's turn.  If no actions were taken, this unit [
+x 0
+y 3322
+spacing "n" -1
+spacing "e" -1
+]only waits half the time for its next turn.[
+color #ffcc00
+x 0
+y 4006
+]Status[
+color #ffffff
+] [
+color #999999
+]-[
+color #ffffff
+spacing "n" -1
+spacing "e" -1
+spacingpair "p" "l" -1
+] Display unit information.  Use this to determine the strengths [
+x 0
+y 4348
+spacing "n" -1
+spacing "e" -1
+]and weaknesses of a unit.

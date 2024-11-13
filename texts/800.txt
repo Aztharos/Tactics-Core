@@ -1,0 +1,19 @@
+[
+xmin -40
+ymin -40
+xmax 14651
+ymax 774
+multiline 1
+readonly 1
+noselect 1
+html 1
+useoutlines 1
+font 749
+height 260
+color #ffffffff
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]<P ALIGN="LEFT"><FONT FACE="Trebuchet MS" SIZE="13" COLOR="#FFFFFF"><B><I>All graphics and sounds in the following demonstration are original. &nbsp;Please send any questions or <SBR/>comments to </I></B><FONT COLOR="#FFCC00"><A HREF="mailto:v2c@ark51.com"><B><I>v2c@ark51.com</I></B></A></FONT><B><I>.</I></B></FONT></P>
