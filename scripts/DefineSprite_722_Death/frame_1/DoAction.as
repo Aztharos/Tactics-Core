@@ -1,0 +1,10 @@
+_X = 0;
+_Y = 6;
+spritecolor = new Color(_parent.sprite);
+glow = new Object();
+glow = {ra:"100",rb:"0",ga:"100",gb:"0",ba:"100",bb:"0",aa:"100",ab:"0"};
+glow.ra = 80;
+glow.ga = 87;
+glow.aa = 75;
+spritecolor.setTransform(glow);
+_parent.shadow._alpha = 75;
