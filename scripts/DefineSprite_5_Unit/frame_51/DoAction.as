@@ -1,0 +1,13 @@
+shadow._alpha = _alpha = 0;
+_parent._parent.map[row][col] = -1;
+row = undorow;
+col = undocol;
+direction = undodirection;
+_parent._parent.map[row][col] = this;
+setdepth();
+shadow._x = _X = _parent._parent.cell_x(row,col);
+shadow._y = _Y = _parent._parent.cell_y(row,col);
+moved = false;
+_parent._parent.endaction();
+attachMovie("UndoFadeIn","fadein",10);
+stand();

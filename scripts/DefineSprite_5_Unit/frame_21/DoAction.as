@@ -1,0 +1,1 @@
+sprite.gotoAndStop("Stand" + direction);

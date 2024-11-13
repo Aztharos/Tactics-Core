@@ -1,0 +1,2 @@
+moveshift(dodgedirection);
+stand();
