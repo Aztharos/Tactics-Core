@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript" src="canvas.js"></script><style type="text/css">#resizable {position:relative; display:inline-block; margin:0; padding:0;font-size:0px;} #width_size {width:10px; position:absolute; right:-5px; top:0px; bottom:0px; cursor:e-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #height_size {height:10px; position:absolute; bottom:-5px; left:0px; right:0px; cursor:n-resize;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;} #myCanvas {margin:0; padding:0;} </style></head><body>
+
+<div id="resizable"><canvas id="myCanvas" width="45" height="29" style="border:1px solid #c3c3c3;">
+Your browser does not support the HTML5 canvas tag.
+</canvas><div id="width_size">&nbsp;</div><div id="height_size">&nbsp;</div></div>
+
+<script>var canvas=document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+enhanceContext(ctx);
+var ctrans = new cxform(0,0,0,0,255,255,255,255);
+function morphshape264(ctx,ctrans,frame,ratio,time){
+	var pathData="M 25 25 -831 -831 Q 85 85 -903 -903 145 145 -1015 -1015 L 375 375 -1285 -1285 Q 287 287 -823 -823 25 25 -831 -831 M -525 -525 -970 -970 Q -249 -249 -502 -502 25 25 -831 -831 -174 -174 -837 -837 -471 -471 -1109 -1109 -467 -467 -1010 -1010 -525 -525 -970 -970";
+	var grd=ctx.createLinearGradient(602.75+ratio*(-663)/65535,-1700.75+ratio*(411.5)/65535,-826.75+ratio*(789)/65535,-1651.25+ratio*(514.5)/65535);
+	var s = 0.25882352941176473+ratio*(0)/65535;
+	if(s<0) s = 0;
+	if(s>1) s = 1;
+	grd.addColorStop(s,tocolor(ctrans.apply([Math.round(254+ratio*(0)/65535),Math.round(225+ratio*(0)/65535),Math.round(143+ratio*(1)/65535),((Math.round(255+ratio*(0)/65535))/255)])));
+	var s = 0.7607843137254902+ratio*(0)/65535;
+	if(s<0) s = 0;
+	if(s>1) s = 1;
+	grd.addColorStop(s,tocolor(ctrans.apply([Math.round(254+ratio*(0)/65535),Math.round(225+ratio*(0)/65535),Math.round(143+ratio*(1)/65535),((Math.round(0+ratio*(0)/65535))/255)])));
+	ctx.fillStyle = grd;
+	drawMorphPath(ctx,pathData,ratio,false);
+
+	ctx.fill("evenodd");
+	var pathData="M -525 -525 -970 -970 Q -467 -467 -1010 -1010 -471 -471 -1109 -1109 -174 -174 -837 -837 25 25 -831 -831 -249 -249 -502 -502 -525 -525 -970 -970 M 25 25 -831 -831 Q 287 287 -823 -823 375 375 -1285 -1285 L 145 145 -1015 -1015 Q 85 85 -903 -903 25 25 -831 -831 Z";
+	var scaleMode = "NORMAL";
+	ctx.strokeStyle=tocolor(ctrans.apply([Math.round(0+ratio*(0)/65535),Math.round(0+ratio*(0)/65535),Math.round(0+ratio*(1)/65535),((Math.round(0+ratio*(0)/65535))/255)]));
+	ctx.lineWidth=0.0+ratio*(0)/65535;
+	ctx.lineCap="round";
+	ctx.lineJoin="round";
+	drawMorphPath(ctx,pathData,ratio,true,scaleMode);
+
+}
+
+var originalWidth=45;
+var originalHeight=29;
+ function drawFrame(ctx,ratio){
+	ctx.save();
+	ctx.transform(canvas.width/originalWidth,0,0,canvas.height/originalHeight,0,0);
+	place("morphshape264",canvas,ctx,[0.05,0.0,0.0,0.05,26.25,64.25],ctrans,1,0,ratio,0);
+	ctx.restore();
+}
+var step = 655;
+var ratio = -1;
+function nextFrame(ctx){
+	ctx.clearRect(0,0,45,29);
+	ratio = (ratio+step)%65535;
+	drawFrame(ctx,ratio);
+}
+window.setInterval(function(){nextFrame(ctx)},10);
+</script>
+</body>
+</html>
